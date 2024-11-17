@@ -189,3 +189,46 @@ footer {
     cursor: pointer;
     border-radius: 10px;
 }
+
+/* Diseño para pantallas pequeñas (móviles) */
+@media (max-width: 600px) {
+    #contenedor {
+        grid-template-columns: 1fr; /* Una sola columna */
+        gap: 10px; /* Espacio más pequeño entre las cajas */
+    }
+
+    .caja-producto img {
+        width: 100%; /* Imagen adaptada al ancho de la caja */
+        height: auto; /* Mantener proporción */
+    }
+
+    h1 {
+        font-size: 35px; /* Tamaño del título más pequeño */
+    }
+
+    .btn-carrito {
+        font-size: 12px; /* Botón del carrito más pequeño */
+        padding: 5px; 
+    }
+
+    footer {
+        font-size: 0.8em; /* Tamaño de fuente reducido */
+        padding: 10px 0;
+    }
+}
+
+/* Diseño para tablets */
+@media (min-width: 601px) and (max-width: 900px) {
+    #contenedor {
+        grid-template-columns: repeat(2, 1fr); /* Dos columnas */
+        gap: 15px; /* Espacio moderado entre las cajas */
+    }
+
+    .btn-carrito {
+        font-size: 14px; /* Tamaño intermedio para el botón del carrito */
+    }
+
+    h1 {
+        font-size: 40px; /* Tamaño del título más grande */
+    }
+}
